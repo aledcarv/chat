@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 5.1rem, 71.7rem;
+    font-family: var(--main-font);
+}
+
+:root {
+    /* COLOR */
+    --color-menu: #4F736F;
+    --color-white: #fff;
+    --color-btn: #D9A84E;
+
+    /* FONT */
+    --main-font: arial, sans-serif;
+    --font-bebas: 'Bebas Neue', arial, sans-serif;
+
+    --font-size-menu: 1.36rem;
+    --font-size-label: 2.5rem;
+    --font-size-txt: 1.7rem;
+
+    /* GENERAL SIZE */
+    --full-width: 100%;
+    --main-width: 75vw;
+
+    --btn-width: 16.2rem;
+    --btn-height: 4.9rem;
+
+    --border-radius: 100px;
+}
+
+.mg-bt {
+    margin-bottom: 2rem !important;
+}
+
+.pd-grl {
+    padding: 1.1rem 1rem !important;
+}
+
+header {
+    width: var(--full-width);
+    padding: .9em 0;
+    background-color: var(--color-menu);
+    font-family: var(--font-bebas);
+    font-size: var(--font-size-menu);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.chat-form {
+    display: flex;
+    flex-direction: column;
+    width: var(--main-width);
+    margin: auto;
+}
+
+label {
+    font-size: var(--font-size-label);
+    font-family: var(--main-font);
+}
+
+input {
+    outline: none;
+}
+
+.messages {
+    border: 1px solid black;
+    height: 30rem;
+    overflow: auto;
+    font-size: var(--font-size-txt);
+}
+
+/* textarea {
+    outline: none;
+}
+.txt-area{
+    resize: none;
+    padding: 1.1rem 1rem;
+} */
+
+.btn {
+    /* width: var(--btn-width); */
+    height: var(--btn-height);
+    background-color: var(--color-btn);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
